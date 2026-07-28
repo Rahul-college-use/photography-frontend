@@ -100,7 +100,7 @@ export default function Home() {
     const fetchPhotos = async () => {
       try {
         // 🔴 Professional Way: VITE_API_BASE_URL Environment Variable Use
-        const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://photography-backend-iota.vercel.app';
+        const API_BASE = 'https://photography-backend-iota.vercel.app';
         const response = await fetch(`${API_BASE}/api/photos`);
 
         if (!response.ok) throw new Error('Failed to fetch photos');
