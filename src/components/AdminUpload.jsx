@@ -155,7 +155,7 @@ export default function AdminUpload() {
 
     try {
       // 🔴 Environment Variable for Base URL
-      const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://photography-backend-iota.vercel.app';
+      const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://photography-backend-c5oi.onrender.com' || 'https://photography-backend-c5oi.onrender.com';
 
       const response = await fetch(`${API_BASE}/api/photos/upload`, {
         method: 'POST',

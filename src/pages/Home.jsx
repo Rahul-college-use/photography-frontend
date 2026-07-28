@@ -100,7 +100,7 @@ export default function Home() {
     const fetchPhotos = async () => {
       try {
         // 🔴 Professional Way: VITE_API_BASE_URL Environment Variable Use
-        const API_BASE = 'https://photography-backend-iota.vercel.app';
+        const API_BASE = 'https://photography-backend-c5oi.onrender.com';
         const response = await fetch(`${API_BASE}/api/photos`);
         console.log(API_BASE)
 
