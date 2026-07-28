@@ -421,7 +421,7 @@ export default function Home() {
           <div className="relative rounded-2xl overflow-hidden border border-[#1E2638] h-[380px]">
             <img
               // src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" 
-              src='\Client\public\logo.png'
+              src='\logo.png'
               alt="Studio Setup"
               className="w-full h-full object-cover"
             />
