@@ -102,6 +102,7 @@ export default function Home() {
         // 🔴 Professional Way: VITE_API_BASE_URL Environment Variable Use
         const API_BASE = 'https://photography-backend-iota.vercel.app';
         const response = await fetch(`${API_BASE}/api/photos`);
+        console.log(API_BASE)
 
         if (!response.ok) throw new Error('Failed to fetch photos');
         const result = await response.json();
@@ -129,6 +130,7 @@ export default function Home() {
 
     fetchPhotos();
   }, []);
+  
   const filteredPortfolio = activeCategory === 'all'
     ? portfolio
     : portfolio.filter(item => item.category === activeCategory);
